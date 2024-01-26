@@ -1,1 +1,18 @@
+{
+  // These tasks will run in order when initializing your CodeSandbox project
+  "setupTasks": [
+    {
+      "name": "Deploy",
+      "command": "cd /project/sandbox/.devcontainer && docker compose up -d"
+    }
+  ],
 
+  // These tasks can be run from CodeSandbox. Running one will open a log in the app.
+  "tasks": {
+    "whereis htop": {
+      "name": "whereis htop",
+      "command": "whereis htop",
+      "runAtStart": true
+    }
+  }
+}
